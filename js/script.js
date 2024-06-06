@@ -1,11 +1,7 @@
-let navbar = document.querySelector(".navbar");
+const darkmode = document.getElementById('darkmode')
 
-document.querySelector("#menu-btn").onclick = () => {
-  navbar.classList.toggle("active");
-  searchForm.classList.remove("active");
-  cartItem.classList.remove("active");
-};
+darkmode.addEventListener('change', () => {
+  document.body.classList.toggle('dark')
+})
 
-window.onscroll = () => {
-  navbar.classList.remove("active");
-};
+
