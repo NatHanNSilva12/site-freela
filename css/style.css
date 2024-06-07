@@ -197,10 +197,13 @@ section {
 }
 
 /*about section*/
+.about {
+	background: #177166;
+}
+
 .about .row {
 	display: flex;
 	align-items: center;
-
 	flex-wrap: wrap;
 }
 
@@ -264,7 +267,9 @@ section {
 
 /*end review section*/
 
-
+.blogs {
+	background: #177166;
+}
 
 .blogs .row {
 	display: flex;
