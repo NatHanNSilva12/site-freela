@@ -114,26 +114,25 @@ section {
 }
 
 .header label {
-    width: 100px;
-    height: 50px;
+	float: right;
+    width: 30px;
+    height: 30px;
     position: relative;
     display: block;
-    background: #ebebeb;
     border-radius: 31px;
-    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.5);
-    cursor: pointer;
+	margin-top: -1rem;
+	cursor: pointer;
     transition: 0.3s;
 }
 .header label:after{
     content: "";
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     position: absolute;
-    top: 1px;
-    left: 1px;
-    background: linear-gradient(180deg, #ffcc89, #d8860b);
-    border-radius: 180px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+	background-image: url("../images/sun.png"),linear-gradient(180deg, #ffcc89, #d8860b);
+    background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 180px;
     transition: 0.3s;
 }
 .header input{
@@ -141,13 +140,12 @@ section {
     height: 0;
     visibility: hidden;
 }
-.header input:checked + label {
-    background: #242424;
-}
 .header input:checked + label:after{
-    left: 48px;
-    background: linear-gradient(180deg, #777, #3a3a3a); 
+    background-image:url("../images/moon.png"), linear-gradient(180deg, #777, #3a3a3a);
+	background-repeat: no-repeat;
+	background-position: center; 
 }
+
 .home {
 	min-height: 20vh;
 	display: flex;
