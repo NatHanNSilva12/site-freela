@@ -17,10 +17,24 @@
 	<script>
 		function changeCss() {
 			var navElement = document.querySelector("header");
-			this.scrollY > 75 ? navElement.style.position = "fixed" : navElement.style.position = "static";
+
+			if(this.scrollY > 75){
+				navElement.style.position = "fixed";
+				if(document.body.className == "dark"){
+					navElement.style.background = "#232c35b5";
+
+				}else{
+					navElement.style.background = "#ffffffb5";
+				}
+			}else{
+				navElement.style.position = "static";
+				navElement.style.background = "#ffffff00"
+			}
+
 		}
 
 		window.addEventListener("scroll", changeCss, false);
+		window.addEventListener("mousemove", changeCss, false);
 	</script>
 </head>
 
@@ -42,8 +56,8 @@
 			<a href="#blogs">Vagas</a>
 			<a href="#contact">Contato</a>
 
-			<input type="checkbox" id="darkmode"/>
-            <label for="darkmode"></label>
+			<a><input type="checkbox" id="darkmode"/>
+            <label for="darkmode"></label></a>
 
 		</nav>
 

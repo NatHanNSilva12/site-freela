@@ -35,12 +35,12 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-	background: #fff;
+	background: #ffffff;
 	border-radius: 5rem;
 }
 
 body {
-	background: #177166;
+	background: #fff;
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -48,7 +48,7 @@ body {
 
 }
 
-body.dark{
+.dark{
     background: #232c35;
 }
 
@@ -56,18 +56,6 @@ section {
 	padding: 2rem 7%;
 }
 
-.heading {
-	text-align: center;
-	color: #177166;
-	text-transform: uppercase;
-	padding-bottom: 3.5rem;
-	font-size: 4rem;
-}
-
-.heading span {
-	color: var(--main-color);
-	text-transform: uppercase;
-}
 
 .btn {
 	margin-top: 5rem;
@@ -86,7 +74,6 @@ section {
 }
 
 .header {
-	background: var(--bg);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -165,7 +152,6 @@ section {
 	min-height: 20vh;
 	display: flex;
 	align-items: center;
-	background-color: var(--bg);
 	background-size: cover;
 	background-position: center;
 }
@@ -233,8 +219,20 @@ section {
 }
 
 /* review section*/
+
+.heading {
+	text-align: center;
+	color: #177166;
+	text-transform: uppercase;
+	padding-bottom: 3.5rem;
+	font-size: 4rem;
+}
+
+.heading span {
+	color: var(--main-color);
+	text-transform: uppercase;
+}
 .review {
-	background: #FFFF;
 	width: 100%;
 	align-items: center;
 }
@@ -334,7 +332,6 @@ section {
 	align-items: center;
 	justify-content: center;
 	margin: 0;
-	background-color: #ffff;
 	color: #333;
 }
 
@@ -380,6 +377,8 @@ section {
 
 .contact {
 	margin: auto;
+	background: #177166;
+	width: 100%;
 }
 
 .contact .row {
@@ -403,6 +402,9 @@ section {
 	color: #fff;
 }
 
+.contact .btn {
+	margin: auto;
+}
 
 .contact .row form .inputBox input,
 .contact .row form textarea {
