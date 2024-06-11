@@ -100,16 +100,12 @@ body {
 .input-box {
     display: flex;
     flex-direction: column;
-
-    
-    
 }
 
 .input-box input {
     margin: 0.6rem 0;
     padding: 0.8rem 1.2rem;
     border: none;
-
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
     font-size: 0.8rem;
@@ -157,6 +153,7 @@ body {
     }
     .container {
         width: 50%;
+       
     }
     .form {
         width: 100%;
@@ -167,7 +164,7 @@ body {
 @media screen and (max-width: 1064px) {
     .container {
         width: 90%;
-        height: auto;
+        height: 70%;
     }
     .input-group {
         flex-direction: column;
