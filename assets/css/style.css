@@ -596,7 +596,7 @@ footer {
 		width: 25px;
 		height: 25px;
 		position: absolute;
-		background-image: url("../images/sun.png"),linear-gradient(180deg, #ffcc89, #d8860b);
+		background-image: url("../images/dark-theme.256x256.png"),linear-gradient(180deg, #ffcc89, #d8860b);
 		background-repeat: no-repeat;
 		background-position: center;
 		border-radius: 180px;
@@ -608,7 +608,7 @@ footer {
 		visibility: hidden;
 	}
 	.header input:checked + label:after{
-		background-image:url("../images/moon.png"), linear-gradient(180deg, #777, #3a3a3a);
+		background-image:url("../images/dark-theme.256x256.png"), linear-gradient(180deg, #777, #3a3a3a);
 		background-repeat: no-repeat;
 		background-position: center; 
 	}
