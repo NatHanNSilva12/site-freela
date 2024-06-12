@@ -147,6 +147,15 @@ body {
     color: #fff;
 }
 
+
+  .g-signin2,
+  .g-signin2 .abcRioButton {
+    display: block;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    border-radius: 50%;
+  }
+
 @media screen and (max-width: 1330px) {
     .form-image {
         display: none;
