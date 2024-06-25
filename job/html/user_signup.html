@@ -5,18 +5,18 @@
   <!-- Required meta tags-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Workociti">
-  <meta name="author" content="Workociti">
-  <meta name="keywords" content="Workociti">
+  <meta name="description" content="ReferenceRH">
+  <meta name="author" content="ReferenceRH">
+  <meta name="keywords" content="ReferenceRH">
 
   <!-- Title Page-->
-  <title>Signup</title>
+  <title>Cadastro</title>
 
   <!-- Font special for pages-->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 
   <!-- Main CSS-->
-  <link href="signup/css/main.css" rel="stylesheet" media="all">
+  <link href="../signin/css/main.css" rel="stylesheet" media="all">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
     <div class="wrapper wrapper--w900">
       <div class="card card-6">
         <div class="card-heading">
-          <h2 class="title">Apply for job</h2>
+          <h2 class="title">Aplicar</h2>
         </div>
         <div class="card-body">
           <form method="POST">
@@ -34,7 +34,7 @@
 
             <!--email-->
             <div class="form-row">
-              <div class="name">Email address</div>
+              <div class="name">Endereço email</div>
               <div class="value">
                 <div class="input-group">
                   <input class="input--style-6" type="email" name="email" placeholder="example@email.com" required>
@@ -44,7 +44,7 @@
 
             <!--Password-->
             <div class="form-row">
-              <div class="name">Password</div>
+              <div class="name">Senha</div>
               <div class="value">
                 <div class="input-group">
                   <input class="input--style-6" type="password" name="pass" id="password" placeholder="">
@@ -54,7 +54,7 @@
 
             <!--Confirm Password-->
             <div class="form-row">
-              <div class="name">Re Type Password</div>
+              <div class="name">Digite novamente</div>
               <div class="value">
                 <div class="input-group">
                   <input class="input--style-6" type="password" name="repass" id="confirm_password" onkeyup="validatePassword();" placeholder="">
@@ -64,7 +64,7 @@
 
             <!--name-->
             <div class="form-row">
-              <div class="name">Full name</div>
+              <div class="name">Nome completo</div>
               <div class="value">
                 <input class="input--style-6" type="text" name="full_name">
               </div>
@@ -72,7 +72,7 @@
 
             <!--DOB-->
             <div class="form-row">
-              <div class="name">Date Of Birth</div>
+              <div class="name">Data de nascimento</div>
               <div class="value">
                 <input class="input--style-6" type="date" name="dob">
               </div>
@@ -80,43 +80,43 @@
 
             <!--gender-->
             <div class="form-row">
-              <div class="name col-lg-2">Gender</div>
+              <div class="name col-lg-2">Genero</div>
               <div class="default-select" id="default-select">
 
                 <select class="col-lg-10">
-                  <option value="1">Male</option>
-                  <option value="1">Female</option>
+                  <option value="1">Masculino</option>
+                  <option value="1">Feminino</option>
+                  <option value="1">Prefiro não dizer</option>
                 </select>
               </div>
             </div>
 
 
             <div class="form-row">
-              <div class="name">Qualification</div>
+              <div class="name">Qualificação</div>
               <!--Qualification-->
 
               <div>
                 <div class=" form-row">
-                  <div class="name">12th</div>
+                  <div class="name">Curso</div>
                   <div class="value">
-                    <input class="input--style-6" type="text" name="course" placeholder="course">
-                    <input class="input--style-6" type="number" name="marks" placeholder="marks">
+                    <input class="input--style-6" type="text" name="course" placeholder="Curso">
+                    <input class="input--style-6" type="number" name="marks" placeholder="Instituição">
                   </div>
                 </div>
                 <div>
                   <div class=" form-row">
-                    <div class="name">Under-Graduation</div>
+                    <div class="name">Graduação</div>
                     <div class="value">
-                      <input class="input--style-6" type="text" name="course" placeholder="course">
-                      <input class="input--style-6" type="text" name="Specialization" placeholder="Specialization">
-                      <input class="input--style-6" type="number" name="marks" placeholder="marks">
+                      <input class="input--style-6" type="text" name="course" placeholder="Curso">
+                      <input class="input--style-6" type="text" name="Specialization" placeholder="Especialização">
                     </div>
                   </div>
                 </div>
                 <div class=" form-row">
-                  <div class="name">Masters</div>
+                  <div class="name">Especialização</div>
                   <div class="value">
-                    <input class="input--style-6" type="text" name="splecialization" placeholder="Specialization">
+                    <input class="input--style-6" type="text" name="splecialization" placeholder="Especialização">
                     <!--  <input class="input-style-6" type="number" name="marks" placeholder="marks">-->
                   </div>
                 </div>
@@ -124,7 +124,7 @@
                 <div class=" form-row">
                   <div class="name">Phd</div>
                   <div class="value">
-                    <input class="input--style-6" type="text" name="paper" placeholder="Paper_presentation">
+                    <input class="input--style-6" type="text" name="paper" placeholder="PHD">
                     <!--  <input class="input-style-6" type="number" name="marks" placeholder="marks">-->
                   </div>
                 </div>
@@ -134,37 +134,37 @@
 
             <!--Salary-->
             <div class="form-row">
-              <div class="name">Current Salary</div>
+              <div class="name">Salario</div>
               <div class="value">
                 <div class="input-group">
-                  <input class="input--style-6" name="Salary" type="number" placeholder="Enter the Salary"></input>
+                  <input class="input--style-6" name="Salary" type="number" placeholder="Salario"></input>
                 </div>
               </div>
             </div>
 
             <!--Notice period-->
             <div class="form-row">
-              <div class="name">Notice Period(days)</div>
+              <div class="name">Dias de trabalho</div>
               <div class="value">
                 <div class="input-group">
-                  <input class="input--style-6" name="notice" type="number" placeholder="Enter the Notice period"></input>
+                  <input class="input--style-6" name="notice" type="number" placeholder="Trabalho"></input>
                 </div>
               </div>
             </div>
 
             <div class="form-row">
-              <div class="name">Experience</div>
+              <div class="name">Experiencia</div>
               <!--experience-->
 
               <div>
                 <div class=" form-row">
-                  <div class="name">Working Period</div>
+                  <div class="name">Periodo de trabalho</div>
                   <div class="value">
 
                     <input class="input--style-6" type="date" name="from">
 
                     <input class="input--style-6" type="date" name="to">
-                    <textarea class="textarea--style-6" name="job_description" placeholder="Enter the job description"></textarea>
+                    <textarea class="textarea--style-6" name="job_description" placeholder="Descriçao"></textarea>
 
 
 
@@ -180,19 +180,19 @@
             </div>
             <!--Skill Sets-->
             <div class="form-row">
-              <div class="name">Skill Sets</div>
+              <div class="name">Habilidades</div>
               <div class="value">
-                <input class="input--style-6" type="text" name="skill" placeholder="Enter Your skills">
+                <input class="input--style-6" type="text" name="skill" placeholder="Habilidades">
               </div>
             </div>
 
 
             <!--Current Address-->
             <div class="form-row">
-              <div class="name">Current Address</div>
+              <div class="name">Endereço atual</div>
               <div class="value">
                 <div class="input-group">
-                  <textarea class="textarea--style-6" name="address" placeholder="Enter your Address"></textarea>
+                  <textarea class="textarea--style-6" name="address" placeholder="Endereço"></textarea>
                 </div>
               </div>
             </div>
@@ -200,15 +200,15 @@
 
             <!--location-->
             <div class="form-row">
-              <div class="name col-lg-2">Location</div>
+              <div class="name col-lg-2">Localização</div>
               <div class="default-select" id="default-select">
 
                 <select class="col-lg-6">
-                  <option value="1">India</option>
-                  <option value="1">Poland</option>
-                  <option value="1">New Zeland</option>
-                  <option value="1">Australia</option>
-
+                  <option value="1">Cotia</option>
+                  <option value="1">Osasco</option>
+                  <option value="1">Itapevi</option>
+                  <option value="1">Mirizola</option>
+                  <option value="1">Outro</option>
                 </select>
               </div>
               <pre>     </pre>
@@ -222,35 +222,35 @@
 
 
             <div class="form-row">
-              <div class="name">Message</div>
+              <div class="name">Mensagem</div>
               <div class="value">
                 <div class="input-group">
-                  <textarea class="textarea--style-6" name="message" placeholder="Message sent to the employer"></textarea>
+                  <textarea class="textarea--style-6" name="message" placeholder="mensagem"></textarea>
                 </div>
               </div>
             </div>
             <div class="form-row">
-              <div class="name">Upload CV</div>
+              <div class="name">Envie seu CV</div>
               <div class="value">
                 <div class="input-group js-input-file">
                   <input class="input-file" type="file" name="file_cv" id="file">
-                  <label class="label--file" for="file">Choose file</label>
-                  <span class="input-file__info">No file chosen</span>
+                  <label class="label--file" for="file">Escolha o arquivo</label>
+                  <span class="input-file__info">Sem arquivo</span>
                 </div>
-                <div class="label--desc">Upload your CV/Resume or any other relevant file. Max file size 50 MB</div>
+                <div class="label--desc">Envie seu CV/ Máximo de 10 MB</div>
               </div>
             </div>
           </form>
         </div>
         <div class="card-footer">
-          <button class="btn btn--radius-2 btn--blue-2" type="submit">Send Application</button>
+          <button class="btn btn--radius-2 btn--blue-2" type="submit">Enviar</button>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Jquery JS-->
-  <script src="signup/vendor/jquery/jquery.min.js"></script>
+  <script src="../signin/vendor/jquery/jquery.min.js"></script>
 
   <!--confirm password-->
   <script>
@@ -267,7 +267,7 @@
   </script>
 
   <!-- Main JS-->
-  <script src="signup/js/global.js"></script>
+  <script src="../signin/js/global.js"></script>
 
 </body>
 
