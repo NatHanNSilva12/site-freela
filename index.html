@@ -66,10 +66,25 @@
 
 		</nav>
 
+		<div class="icons">
+			<div class="fas fa-bars" id="menu-btn"></div>
+		</div>
+
 	</header>
 
 	<!-- header section ends -->
+	<script>
+		let navbar = document.querySelector('.navbar');
 
+		document.querySelector('#menu-btn').onclick = () =>{
+    	navbar.classList.toggle('active');
+	}
+
+		window.onscroll = () =>{
+    	navbar.classList.remove('active');
+	}
+
+	</script>
 	<!--home section starts-->
 	<section class="home" id="home">
 		<div class="row">

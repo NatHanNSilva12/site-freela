@@ -129,7 +129,7 @@ section {
     width: 40px;
     height: 40px;
     position: absolute;
-	background-image: url("../images/sun.png"),linear-gradient(180deg, #ffcc89, #d8860b);
+	background-image: url("../images/dark-theme.256x256.png"),linear-gradient(180deg, #ffcc89, #d8860b);
     background-repeat: no-repeat;
 	background-position: center;
 	border-radius: 180px;
@@ -141,9 +141,24 @@ section {
     visibility: hidden;
 }
 .header input:checked + label:after{
-    background-image:url("../images/moon.png"), linear-gradient(180deg, #777, #3a3a3a);
+    background-image:url("../images/dark-theme.256x256.png"), linear-gradient(180deg, #777, #3a3a3a);
 	background-repeat: no-repeat;
 	background-position: center; 
+}
+
+.header .icons div{
+    color:var(--main-color);
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover{
+    color:var(--main-color);
+}
+
+#menu-btn{
+    display: none;
 }
 
 .home {
@@ -557,6 +572,10 @@ footer {
 		height: 6rem;
 	}
 	
+	.header .navbar.active{
+		right:0;
+	}
+	
 	.header .navbar a {
 		margin: 0 1rem;
 		font-size: 2rem;
@@ -570,7 +589,7 @@ footer {
 	}
 	
 	.header .icons div {
-		color: #fff;
+		color: var(--main-color);
 		cursor: pointer;
 		font-size: 2.5rem;
 		margin-left: 2rem;
@@ -679,7 +698,7 @@ footer {
 	}
 
 
-	footer {
+	.footer {
 		display: grid;
 		justify-content: space-between;
 		align-items: center;
