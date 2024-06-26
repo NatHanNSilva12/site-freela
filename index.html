@@ -67,7 +67,7 @@
 		</nav>
 
 		<div class="icons">
-			<div class="fas fa-bars" id="menu-btn"></div>
+			<div onclick=showSidebar() class="fas fa-bars" id="menubtn"></div>
 		</div>
 
 	</header>
@@ -76,13 +76,17 @@
 	<script>
 		let navbar = document.querySelector('.navbar');
 
-		document.querySelector('#menu-btn').onclick = () =>{
+		document.querySelector('#menubtn').onclick = () =>{
     	navbar.classList.toggle('active');
 	}
 
 		window.onscroll = () =>{
     	navbar.classList.remove('active');
 	}
+
+		function showSidebar(){
+			const menubtn = document.querySelector('#menubtn')
+		}
 
 	</script>
 	<!--home section starts-->
