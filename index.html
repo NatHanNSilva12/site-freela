@@ -66,10 +66,29 @@
 
 		</nav>
 
+		<div class="icons">
+			<div onclick=showSidebar() class="fas fa-bars" id="menubtn"></div>
+		</div>
+
 	</header>
 
 	<!-- header section ends -->
+	<script>
+		let navbar = document.querySelector('.navbar');
 
+		document.querySelector('#menubtn').onclick = () =>{
+    	navbar.classList.toggle('active');
+	}
+
+		window.onscroll = () =>{
+    	navbar.classList.remove('active');
+	}
+
+		function showSidebar(){
+			const menubtn = document.querySelector('#menubtn')
+		}
+
+	</script>
 	<!--home section starts-->
 	<section class="home" id="home">
 		<div class="row">
