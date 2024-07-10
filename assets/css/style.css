@@ -267,11 +267,17 @@ section {
 }
 
 .review table tr td p {
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	line-height: 1.8;
 	padding: 8px;
 	color: #26B4A4;
+	display: inline-block;
+	text-transform: lowercase;
 
+}
+
+.review table tr td p::first-letter{
+	text-transform: uppercase;
 }
 
 .review table tr td .quote {
@@ -341,12 +347,18 @@ section {
 }
 
 .blogs .box-container .box .content p {
-	margin-top: 5rem;
-	font-size: 1.6rem;
+	margin-top: 3rem;
+	font-size: 1.8rem;
 	line-height: 1.8;
 	color: #ccc;
+	display: block;
+	text-transform: lowercase;
 	padding: 1rem 0;
 }
+
+.blogs .box-container .box .content p:first-letter{
+	text-transform: uppercase;
+} 
 
 .custos {
 	font-family: sans-serif;
