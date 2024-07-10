@@ -379,6 +379,12 @@ section {
 	font-size: 2.5em;
 	margin-bottom: 15px;
 	color: #177166;
+	display: inline-block;
+	text-transform: lowercase;
+}
+
+.custos h1::first-letter{
+	text-transform: uppercase;
 }
 
 .custos .price {
@@ -398,6 +404,12 @@ section {
 	color: #00a884;
 	font-size: 2em;
 	margin-top: 20px;
+	display: inline-block;
+	text-transform: lowercase;
+}
+
+.custos .description::first-letter{
+	text-transform: uppercase;
 }
 
 .custos .cta {
@@ -406,6 +418,12 @@ section {
 	color: #177166;
 	padding: 10px 20px;
 	text-decoration: none;
+	display: inline-block;
+	text-transform: lowercase;
+}
+
+.custos .cta::first-letter{
+	text-transform: uppercase;
 }
 
 /*contact section*/
