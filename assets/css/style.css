@@ -185,7 +185,12 @@ section {
 	font-weight: lighter;
 	line-height: 1.8;
 	padding: 1rem 0;
+	display: inline-block;
+	text-transform: lowercase;
+}
 
+.home .content p:first-letter{
+	text-transform: uppercase;
 }
 
 .home img {
