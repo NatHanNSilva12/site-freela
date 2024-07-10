@@ -256,48 +256,67 @@ section {
 	color: var(--main-color);
 	text-transform: uppercase;
 }
-.review {
-	width: 100%;
-	align-items: center;
+
+
+/* Estilo base para o container */
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* Estilo para o título */
+.container h1 {
+    color: #00796b;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o grid container */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
+/* Estilo para cada item do grid */
 .grid-item {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilo para as imagens nos itens do grid */
 .grid-item img {
     width: 50px;
     height: 50px;
-    margin-bottom: 10px;
 }
 
+/* Estilo para o texto nos itens do grid */
 .grid-item p {
     color: #00796b;
     font-size: 16px;
     margin: 0;
-	display: inline-block;
-	text-transform: lowercase;
+	flex: 1;
 }
 
-.grid-item p::first-letter{
-	text-transform: uppercase;
-}
-
+/* Estilo para o container dos botões */
 .button-container {
     display: flex;
     justify-content: right;
     margin-top: 20px;
 }
 
+/* Estilo para os botões de chamada para ação */
 .cta-button {
     background-color: #00796b;
     color: white;
@@ -306,12 +325,13 @@ section {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
+    margin: 0 10px;
 }
 
+/* Efeito hover nos botões de chamada para ação */
 .cta-button:hover {
     background-color: #005f56;
 }
-
 /*end review section*/
 
 .blogs {
@@ -711,61 +731,7 @@ footer {
 		float: right;
 		width: 100%;
 	}
-	.review {
-		width: 100%;
-		align-items: center;
-	}
-	
-	.grid-container {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 20px;
-	}
-	
-	.grid-item {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-	}
-	
-	.grid-item img {
-		width: 50px;
-		height: 50px;
-		margin-bottom: 10px;
-	}
-	
-	.grid-item p {
-		color: #00796b;
-		font-size: 16px;
-		margin: 0;
-		display: inline-block;
-		text-transform: lowercase;
-	}
-	
-	.grid-item p::first-letter{
-		text-transform: uppercase;
-	}
-	
-	.button-container {
-		display: flex;
-		justify-content: right;
-		margin-top: 20px;
-	}
-	
-	.cta-button {
-		background-color: #00796b;
-		color: white;
-		border: none;
-		padding: 10px 20px;
-		font-size: 16px;
-		border-radius: 5px;
-		cursor: pointer;
-	}
-	
-	.cta-button:hover {
-		background-color: #005f56;
-	}
+
 	
 	.blogs .heading {
 		text-align: center;
@@ -866,11 +832,61 @@ footer {
 	}
 
 }
+/* Estilos responsivos */
+@media (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .cta-button {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .cta-button {
+        margin: 10px 0;
+    }
+}
 
 @media (max-width:450px) {
 
 	html {
 		font-size: 50%;
 	}
+	.container {
+        padding: 10px;
+    }
+
+    .grid-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grid-item img {
+        margin-bottom: 10px;
+    }
+
+    .grid-container {
+        padding-left: 0;
+        gap: 10px; /* Reduce gap for smaller screens */
+    }
+
+    .cta-button {
+        width: 100%;
+        padding: 15px 0;
+    }
 
 }
