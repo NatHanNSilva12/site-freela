@@ -711,38 +711,61 @@ footer {
 		width: 100%;
 	}
 	.review {
-		background: #FFFF;
 		width: 100%;
 		align-items: center;
 	}
 	
-	
-	.review table {
-		display: block;
-		margin: auto;
-		width: 50%;
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
 	}
 	
-	.review table tr td p {
-		font-size: 1.5rem;
-		line-height: 1.8;
-		padding: 8px;
-		color: #26B4A4;
-	
+	.grid-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
 	}
 	
-	.review table tr td .quote {
-		padding-right: 20px;
+	.grid-item img {
+		width: 50px;
+		height: 50px;
+		margin-bottom: 10px;
 	}
 	
-	.review .btn {
-		width: 50%;
-		font-size: 1.5rem;
-		color: #FFF;
-		border-radius: 0.8rem;
-		background: #26B4A4;
+	.grid-item p {
+		color: #00796b;
+		font-size: 16px;
+		margin: 0;
+		display: inline-block;
+		text-transform: lowercase;
+	}
+	
+	.grid-item p::first-letter{
+		text-transform: uppercase;
+	}
+	
+	.button-container {
+		display: flex;
+		justify-content: right;
+		margin-top: 20px;
+	}
+	
+	.cta-button {
+		background-color: #00796b;
+		color: white;
+		border: none;
+		padding: 10px 20px;
+		font-size: 16px;
+		border-radius: 5px;
 		cursor: pointer;
 	}
+	
+	.cta-button:hover {
+		background-color: #005f56;
+	}
+	
 	.blogs .heading {
 		text-align: center;
 		margin-left: 10%;
