@@ -307,6 +307,12 @@ section {
     font-size: 16px;
     margin: 0;
 	flex: 1;
+	display: inline-block;
+	text-transform: lowercase;
+}
+
+.grid-item p::first-letter{
+	text-transform: uppercase;
 }
 
 /* Estilo para o container dos botões */
