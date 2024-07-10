@@ -258,7 +258,6 @@ section {
 }
 
 
-/* Estilo base para o container */
 .container {
     text-align: center;
     background-color: white;
@@ -269,39 +268,31 @@ section {
     margin: 0 auto;
 }
 
-/* Estilo para o título */
 .container h1 {
     color: #00796b;
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-/* Estilo para o grid container */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
-
-/* Estilo para cada item do grid */
 .grid-item {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background-color: #f9f9f9;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para as imagens nos itens do grid */
 .grid-item img {
     width: 50px;
     height: 50px;
 }
 
-/* Estilo para o texto nos itens do grid */
 .grid-item p {
     color: #00796b;
     font-size: 16px;
@@ -315,14 +306,12 @@ section {
 	text-transform: uppercase;
 }
 
-/* Estilo para o container dos botões */
 .button-container {
     display: flex;
     justify-content: right;
     margin-top: 20px;
 }
 
-/* Estilo para os botões de chamada para ação */
 .cta-button {
     background-color: #00796b;
     color: white;
@@ -333,8 +322,6 @@ section {
     cursor: pointer;
     margin: 0 10px;
 }
-
-/* Efeito hover nos botões de chamada para ação */
 .cta-button:hover {
     background-color: #005f56;
 }
