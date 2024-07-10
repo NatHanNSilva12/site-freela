@@ -229,6 +229,12 @@ section {
 	color: #ccc;
 	padding: 1rem 0;
 	line-height: 1.8;
+	display: inline-block;
+	text-transform: lowercase;
+}
+
+.about .row .content p:first-letter{
+	text-transform: uppercase;
 }
 
 .about .row .image img {
