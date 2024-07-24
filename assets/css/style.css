@@ -552,6 +552,8 @@ footer {
 .footer-section a {
 	color: #fff;
 	text-decoration: none;
+	text-transform: lowercase;
+	display: inline-block;
 }
 
 .footer-section p {
